@@ -1,5 +1,5 @@
 <?php
-const APP_PATH = ROOT_PATH . "application". SLASH;
+const APP_PATH = ROOT_PATH . "application/";
 
 //按命名空间自动加载 
 require_once CORE_PATH . "Loader.php";
