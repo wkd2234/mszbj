@@ -4,6 +4,12 @@
     <meta charset="utf-8">
     <link href="/bootstrap/css/bootstrap.css" rel="stylesheet" >
     <script src="/jquery-1.11.3/jquery.js"></script>
+    <style>
+    input[type=text]:focus, input[type=password]:focus, textarea:focus {
+        -webkit-box-shadow: 0 0 0 1000px white inset;
+        outline:none;
+    }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">

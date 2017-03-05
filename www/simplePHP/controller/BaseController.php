@@ -14,7 +14,7 @@ class BaseController {
         $rpos = strrpos($path, '\\');
     
         $module = substr($path, $pos+1, $rpos-$pos-1);
-        $this->view->setTplPath(APP_PATH . $module . '/view');   
+        $this->view->setTplPath(APP_PATH . $module . SLASH .'view');   
 
         $this->setRequest();
 

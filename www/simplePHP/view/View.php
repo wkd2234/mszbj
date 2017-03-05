@@ -20,18 +20,21 @@ class View {
     }
 
     public function setTplPath($path) {
-        $path = '/'.trim($path, '/');
+        $path = str_replace(SLASH, "\\".SLASH, $path);        
+        $path = SLASH.trim($path, SLASH);
+        
         $this->includePath .= $path;
     }
 
     public function display($tpl){
-        $tpl = trim($tpl, '/');
+        $tpl = trim($tpl, SLASH);
         set_include_path($this->includePath);
         if(!empty($this->datas)){
             foreach ($this->datas as $key => $val) {
                 ${$key} = $val;
             }
         }
+        $tpl = str_replace(SLASH, "\\".SLASH, $tpl);
         require_once($tpl);
 
         exit;

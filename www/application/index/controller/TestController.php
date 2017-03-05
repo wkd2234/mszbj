@@ -10,9 +10,9 @@ class TestController extends BaseController{
     }
 
     public function indexAction(){
-        $model = new Index();
-        $res = $model->demo();
-        $this->view->assign('re', $res);
+        // $model = new Index();
+        // $res = $model->demo();
+        // $this->view->assign('re', $res);
         $this->view->assign('project','马赛直播间');
         $this->view->assign('navNum', '1');
         $this->view->setTplPath('index');
