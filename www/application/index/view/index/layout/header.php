@@ -14,13 +14,16 @@
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li <?= 1==$navNum ? 'class="active"' : ""?>>
-                        <a href="/index/Test/index">Home</a>
+                        <a href="/index/Test/index">主页</a>
                     </li>
                     <li <?= 2==$navNum ? 'class="active"' : ""?>>
-                        <a href="/index/Category/index">Category</a>
+                        <a href="/index/Category/index">分类</a>
                     </li>
                     <li <?= 3==$navNum ? 'class="active"' : ""?>>
-                        <a href="#">All</a>
+                        <a href="/index/Alllive/index">全部直播</a>
+                    </li>
+                    <li <?= 4==$navNum ? 'class="active"' : ""?>>
+                        <a href="/index/Allvideo/index">全部视频</a>
                     </li>
                 </ul>
                 <? if(!isset($has_login) || empty($has_login)) { ?>

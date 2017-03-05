@@ -6,7 +6,7 @@ use app\auth\model\Index as Index;
 class Login extends BaseController {
     public $model;
     public static $instance;
-
+    //引用请求模块的view
     public static function getInstance($view){
         if(empty(self::$instance) || self::$instance instanceof self == false) {
             self::$instance = new self();

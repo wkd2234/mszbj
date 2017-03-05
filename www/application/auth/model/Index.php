@@ -8,6 +8,7 @@ class Index extends BaseModel {
     }
 
     public function validate($email, $password) {
+        ///todo 要添加验证规则
         session_start();
         return (!empty($email) && !empty($password));
     }
